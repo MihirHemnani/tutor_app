@@ -60,24 +60,19 @@ session_start();
 <?php
 include 'header.php';
 ?>
-<div class="page-wrap">
-<div class="login">
-    <div class="header">
-        <h1><?php echo $company_logo?><?php echo $company_name?>
-        </h1>
+    <div class="page-wrap">
+        <div class="login">
+            <div class="form">
+            <h2>Login</h2>
+                <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" autocomplete="off">
+                    <label for="id">ID</label>
+                    <input type="text" id="id" name="id" placeholder="ID" required>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass" placeholder="Password" required>
+                    <br>
+                    <input type="submit" class="button" name="submit">
+                </form>
+            </div>  
+        </div>
     </div>
-    
-    <div class="form">
-    <h2>Login</h2>
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" autocomplete="off">
-            <label for="id">ID</label>
-            <input type="text" id="id" name="id" placeholder="ID" required>
-            <label for="pass">Password</label>
-            <input type="password" id="pass" name="pass" placeholder="Password" required>
-            <br>
-            <input type="submit" class="button" name="submit">
-        </form>
-    </div>  
-</div>
-</div>
 <?php include 'footer.php'?>
