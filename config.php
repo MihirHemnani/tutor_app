@@ -12,11 +12,11 @@ try{
         // $gateway->setSecret(CLIENT_SECRET);
         // $gateway->setTestMode(true);
         date_default_timezone_set('Asia/Kolkata');
-        $servername = "sql6.freemysqlhosting.net";
-        $db_name = "sql6632551";
+        $servername = "localhost";
+        $db_name = "id21033922_sql6632551";
         $dsn = "mysql: dbname=$db_name; host=$servername";
-        $username = "sql6632551";
-        $password = "jFy2S2U1s8";
+        $username = "id21033922_sql6632551";
+        $password = "jFy2S2U1s8@";
 
         // $servername = "localhost";
         // $db_name = "tutor_app";
